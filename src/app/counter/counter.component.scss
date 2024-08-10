@@ -1,0 +1,36 @@
+.counter-title {
+  text-align: center;
+}
+
+.counter-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  .number {
+    padding: 4px, 8px;
+    border-radius: 4px;
+  }
+}
+
+.number {
+  padding: 4px, 8px;
+  border-radius: 4px;
+  color: black;
+  background-color: white;
+}
+
+.negative {
+  background-color: #ffc9c9;
+  color: #f03e3e;
+}
+
+.positive {
+  background-color: #b2f2bb;
+  color: #37b24d;
+}

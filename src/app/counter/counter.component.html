@@ -1,1 +1,12 @@
-<p>counter works!</p>
+<div class="container my-5 p-3">
+  <h1 class="counter-title">Counter</h1>
+  <div class="counter-display p-3">
+    <h2 class="number" [ngClass]="{'negative': number < 0, 'positive': number > 0}">{{number}}</h2>
+    <div class="buttons">
+      <button class="btn btn-primary" type="button" (click)="number = number - 1">-</button>
+      <button class="btn btn-primary" type="button" (click)="number = 0">Reset</button>
+      <button class="btn btn-primary" type="button" (click)="number = number + 1">+</button>
+    </div>
+  </div>
+
+</div>
